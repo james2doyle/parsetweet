@@ -91,6 +91,14 @@ class ParsetweetTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
+    public function it_parses_emojis()
+    {
+        $actual = parse_tweet("The gym rocks my world everyday #getfitforthesummer 💪🏼🏋🏽");
+        $expected = "The gym rocks my world everyday <a title=\"#getfitforthesummer\" href=\"https://twitter.com/search?q=%23getfitforthesummer&src=hash\" target=\"_blank\">#getfitforthesummer</a> 💪🏼🏋🏽";
+        $this->assertEquals($actual, $expected);
+    }
+
+    /** @test */
     public function it_parses_complex_tweet_1()
     {
         $actual = parse_tweet("This #weather is crazy! @weatherchannel");
