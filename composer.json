@@ -1,0 +1,21 @@
+{
+    "name": "james2doyle/parsetweet",
+    "version": "1.0.0",
+    "keywords": ["function", "parse", "tweet", "hashtags", "parse"],
+    "description": "a function that can parse tweet hashtags, links, and mentions",
+    "require-dev": {
+        "phpunit/phpunit": "^5.3"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/james2doyle/parsetweet",
+    "authors": [
+        {
+            "name": "james2doyle",
+            "email": "james2doyle@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": ["src/james2doyle/parsetweet.php"]
+    },
+    "require": {}
+}
