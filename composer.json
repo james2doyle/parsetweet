@@ -2,7 +2,7 @@
     "name": "james2doyle/parsetweet",
     "version": "1.0.0",
     "keywords": ["function", "parse", "tweet", "hashtags", "parse"],
-    "description": "a function that can parse tweet hashtags, links, and mentions",
+    "description": "This function can parse tweets and wrap @mentions, #hashtags, and URLs in link tags.",
     "require-dev": {
         "phpunit/phpunit": "^5.3"
     },
